@@ -29,6 +29,8 @@
 		D631DB012AEEA59400E6827D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB002AEEA59400E6827D /* SplashViewModel.swift */; };
 		D631DB052AEEA8F400E6827D /* CharacterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D631DB042AEEA8F400E6827D /* CharacterViewCell.xib */; };
 		D631DB072AEEA93C00E6827D /* CharacterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB062AEEA93C00E6827D /* CharacterViewCell.swift */; };
+		D631DB0A2AEEB8E600E6827D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D631DB092AEEB8E600E6827D /* KeychainSwift */; };
+		D631DB0D2AEEBA2E00E6827D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D631DB0C2AEEBA2E00E6827D /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D631DB0D2AEEBA2E00E6827D /* Kingfisher in Frameworks */,
+				D631DB0A2AEEB8E600E6827D /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +426,10 @@
 			dependencies = (
 			);
 			name = DragonBall;
+			packageProductDependencies = (
+				D631DB092AEEB8E600E6827D /* KeychainSwift */,
+				D631DB0C2AEEBA2E00E6827D /* Kingfisher */,
+			);
 			productName = DragonBall;
 			productReference = D631DA932AEE92A700E6827D /* DragonBall.app */;
 			productType = "com.apple.product-type.application";
@@ -494,6 +502,10 @@
 				Base,
 			);
 			mainGroup = D631DA8A2AEE92A700E6827D;
+			packageReferences = (
+				D631DB082AEEB8E600E6827D /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				D631DB0B2AEEBA2E00E6827D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D631DA942AEE92A700E6827D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -899,6 +911,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D631DB082AEEB8E600E6827D /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+		D631DB0B2AEEBA2E00E6827D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D631DB092AEEB8E600E6827D /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D631DB082AEEB8E600E6827D /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		D631DB0C2AEEBA2E00E6827D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D631DB0B2AEEBA2E00E6827D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D631DA9F2AEE92A700E6827D /* DragonBall.xcdatamodeld */ = {
