@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="DragonBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9FD-Jj-d2Y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOz-Yr-nbK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mOz-Yr-nbK" secondAttribute="height" multiplier="393:400" id="b2S-76-Ppw"/>
+                                </constraints>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXM-gW-PC5" userLabel="Character Image View">
+                                <rect key="frame" x="305" y="64" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IXM-gW-PC5" secondAttribute="height" multiplier="1:1" id="cN4-Gy-Rra"/>
+                                    <constraint firstAttribute="height" constant="72" id="hxH-dm-Wo4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-ON-LcY" userLabel="Title">
+                                <rect key="frame" x="16" y="420" width="361" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="pzg-yS-4yV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="20"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctB-ci-BlF">
+                                <rect key="frame" x="16" y="462" width="361" height="348"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh5-oz-pRb" userLabel="Back Button">
+                                <rect key="frame" x="162" y="763" width="69" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ieN-vS-fu6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ctB-ci-BlF" firstAttribute="top" secondItem="hbx-ON-LcY" secondAttribute="bottom" constant="20" id="0D0-zA-fBQ"/>
+                            <constraint firstItem="hbx-ON-LcY" firstAttribute="top" secondItem="mOz-Yr-nbK" secondAttribute="bottom" constant="20" id="3hY-Nc-bOI"/>
+                            <constraint firstItem="ieN-vS-fu6" firstAttribute="trailing" secondItem="hbx-ON-LcY" secondAttribute="trailing" constant="16" id="5iS-hI-4Ku"/>
+                            <constraint firstItem="ieN-vS-fu6" firstAttribute="bottom" secondItem="rh5-oz-pRb" secondAttribute="bottom" constant="24" id="9QV-eh-CUS"/>
+                            <constraint firstItem="ieN-vS-fu6" firstAttribute="trailing" secondItem="IXM-gW-PC5" secondAttribute="trailing" constant="16" id="Azc-Ck-ly8"/>
+                            <constraint firstItem="ieN-vS-fu6" firstAttribute="trailing" secondItem="ctB-ci-BlF" secondAttribute="trailing" constant="16" id="ItW-Ia-vKB"/>
+                            <constraint firstItem="ieN-vS-fu6" firstAttribute="bottom" secondItem="ctB-ci-BlF" secondAttribute="bottom" constant="8" id="J1f-wQ-HkS"/>
+                            <constraint firstItem="rh5-oz-pRb" firstAttribute="centerX" secondItem="9FD-Jj-d2Y" secondAttribute="centerX" id="KKF-ne-yVG"/>
+                            <constraint firstItem="ctB-ci-BlF" firstAttribute="leading" secondItem="ieN-vS-fu6" secondAttribute="leading" constant="16" id="QRD-Ge-TBk"/>
+                            <constraint firstItem="mOz-Yr-nbK" firstAttribute="top" secondItem="9FD-Jj-d2Y" secondAttribute="top" id="Toq-Vg-5KB"/>
+                            <constraint firstItem="mOz-Yr-nbK" firstAttribute="trailing" secondItem="ieN-vS-fu6" secondAttribute="trailing" id="cuD-dW-95t"/>
+                            <constraint firstItem="IXM-gW-PC5" firstAttribute="top" secondItem="mOz-Yr-nbK" secondAttribute="top" constant="64" id="fgY-rX-Qxl"/>
+                            <constraint firstItem="mOz-Yr-nbK" firstAttribute="leading" secondItem="ieN-vS-fu6" secondAttribute="leading" id="fkN-Sb-47b"/>
+                            <constraint firstItem="hbx-ON-LcY" firstAttribute="leading" secondItem="ieN-vS-fu6" secondAttribute="leading" constant="16" id="jp8-UL-bvo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="rh5-oz-pRb" id="95n-Ov-0gC"/>
+                        <outlet property="characterDescription" destination="ctB-ci-BlF" id="7An-JM-lcK"/>
+                        <outlet property="mapView" destination="mOz-Yr-nbK" id="0fT-5g-WnY"/>
+                        <outlet property="name" destination="hbx-ON-LcY" id="ZLq-6X-yyK"/>
+                        <outlet property="picture" destination="IXM-gW-PC5" id="Dls-eV-nNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

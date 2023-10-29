@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="Y6W-OH-hqX" customClass="SplashViewController" customModule="DragonBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vyJ-wX-dsf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo4" translatesAutoresizingMaskIntoConstraints="NO" id="FkO-ew-lxn">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="eOn-QN-KM9">
+                                <rect key="frame" x="178" y="50" width="37" height="752"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M2t-ou-G4q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eOn-QN-KM9" firstAttribute="centerX" secondItem="vyJ-wX-dsf" secondAttribute="centerX" id="6KE-Fd-KKz"/>
+                            <constraint firstItem="M2t-ou-G4q" firstAttribute="bottom" secondItem="eOn-QN-KM9" secondAttribute="bottom" constant="16" id="Bvi-6T-PXY"/>
+                            <constraint firstAttribute="trailing" secondItem="FkO-ew-lxn" secondAttribute="trailing" id="PC1-NK-Knz"/>
+                            <constraint firstItem="FkO-ew-lxn" firstAttribute="leading" secondItem="M2t-ou-G4q" secondAttribute="leading" id="bm9-bS-CSd"/>
+                            <constraint firstItem="eOn-QN-KM9" firstAttribute="centerY" secondItem="vyJ-wX-dsf" secondAttribute="centerY" id="n4p-gp-de6"/>
+                            <constraint firstItem="FkO-ew-lxn" firstAttribute="top" secondItem="vyJ-wX-dsf" secondAttribute="top" id="ty0-XW-pfE"/>
+                            <constraint firstAttribute="bottom" secondItem="FkO-ew-lxn" secondAttribute="bottom" id="v9Y-AV-pSj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loading" destination="eOn-QN-KM9" id="ECR-Tr-7ex"/>
+                        <segue destination="aVH-UH-kD0" kind="show" id="SIa-mH-qtd"/>
+                        <segue destination="xvN-Fd-qB2" kind="show" id="fAM-Vf-rIC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115" y="4"/>
+        </scene>
+        <!--LoginView-->
+        <scene sceneID="cRg-3b-dLm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginView" id="aVH-UH-kD0" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NuN-R9-Lzg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Lf-Dj-eJe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="-82"/>
+        </scene>
+        <!--HomeView-->
+        <scene sceneID="2QK-SE-UO4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeView" id="xvN-Fd-qB2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dTW-Z4-Qzc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCF-Qd-vsJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="90"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo4" width="1116" height="1941"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

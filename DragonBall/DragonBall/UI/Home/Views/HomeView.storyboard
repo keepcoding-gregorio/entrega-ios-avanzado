@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="DragonBall" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Au-dK-5CR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kKE-bI-B3I">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHV-I4-7v8" userLabel="Loading View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0Hn-F7-oQ6">
+                                        <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                                        <color key="color" name="AccentColor"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.69647439109999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0Hn-F7-oQ6" firstAttribute="centerY" secondItem="JHV-I4-7v8" secondAttribute="centerY" id="9uN-9l-8Zc"/>
+                                    <constraint firstItem="0Hn-F7-oQ6" firstAttribute="centerX" secondItem="JHV-I4-7v8" secondAttribute="centerX" id="Nc1-Yp-hFq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PBC-XF-pLU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kKE-bI-B3I" firstAttribute="bottom" secondItem="PBC-XF-pLU" secondAttribute="bottom" id="IJs-E7-Ip0"/>
+                            <constraint firstItem="kKE-bI-B3I" firstAttribute="trailing" secondItem="PBC-XF-pLU" secondAttribute="trailing" id="NcR-ez-sOv"/>
+                            <constraint firstItem="JHV-I4-7v8" firstAttribute="trailing" secondItem="PBC-XF-pLU" secondAttribute="trailing" id="SN7-xM-V4p"/>
+                            <constraint firstItem="JHV-I4-7v8" firstAttribute="leading" secondItem="PBC-XF-pLU" secondAttribute="leading" id="fka-WH-Et0"/>
+                            <constraint firstAttribute="bottom" secondItem="JHV-I4-7v8" secondAttribute="bottom" id="l9k-Z3-hbT"/>
+                            <constraint firstItem="kKE-bI-B3I" firstAttribute="leading" secondItem="PBC-XF-pLU" secondAttribute="leading" id="po6-5c-GlB"/>
+                            <constraint firstItem="kKE-bI-B3I" firstAttribute="top" secondItem="PBC-XF-pLU" secondAttribute="top" id="qfb-S2-1a3"/>
+                            <constraint firstItem="JHV-I4-7v8" firstAttribute="top" secondItem="5Au-dK-5CR" secondAttribute="top" id="xOB-xW-ZRt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="JHV-I4-7v8" id="eTC-DI-4mp"/>
+                        <outlet property="tableView" destination="kKE-bI-B3I" id="Sfk-wF-poh"/>
+                        <segue destination="5qh-XK-QOe" kind="show" identifier="HOME_TO_DETAIL" id="hqa-fw-VTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="-2"/>
+        </scene>
+        <!--DetailView-->
+        <scene sceneID="UV8-Cr-b3c">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailView" id="5qh-XK-QOe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tw3-pO-4Df"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAe-tx-NUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
