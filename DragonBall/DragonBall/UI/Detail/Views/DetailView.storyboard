@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctB-ci-BlF">
-                                <rect key="frame" x="16" y="462" width="361" height="348"/>
+                                <rect key="frame" x="16" y="462" width="361" height="340"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,12 +50,31 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh5-oz-pRb" userLabel="Back Button">
-                                <rect key="frame" x="162" y="763" width="69" height="31"/>
+                                <rect key="frame" x="168.33333333333334" y="763" width="56.666666666666657" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                <buttonConfiguration key="configuration" style="filled" title="Back">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBackTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5YE-46-aEu"/>
+                                </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" id="eFK-ju-p7A" userLabel="Loading View">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Upt-OG-6GH">
+                                        <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                                        <color key="color" name="AccentColor"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="27O-WR-cSe"/>
+                                <color key="backgroundColor" white="1" alpha="0.69647439109999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Upt-OG-6GH" firstAttribute="centerX" secondItem="eFK-ju-p7A" secondAttribute="centerX" id="nXU-rY-JBb"/>
+                                    <constraint firstItem="Upt-OG-6GH" firstAttribute="centerY" secondItem="eFK-ju-p7A" secondAttribute="centerY" id="wfJ-4q-z2P"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ieN-vS-fu6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -64,20 +84,23 @@
                             <constraint firstItem="ieN-vS-fu6" firstAttribute="trailing" secondItem="hbx-ON-LcY" secondAttribute="trailing" constant="16" id="5iS-hI-4Ku"/>
                             <constraint firstItem="ieN-vS-fu6" firstAttribute="bottom" secondItem="rh5-oz-pRb" secondAttribute="bottom" constant="24" id="9QV-eh-CUS"/>
                             <constraint firstItem="ieN-vS-fu6" firstAttribute="trailing" secondItem="IXM-gW-PC5" secondAttribute="trailing" constant="16" id="Azc-Ck-ly8"/>
+                            <constraint firstItem="ieN-vS-fu6" firstAttribute="bottom" secondItem="ctB-ci-BlF" secondAttribute="bottom" constant="16" id="Bl4-Pv-ObW"/>
                             <constraint firstItem="ieN-vS-fu6" firstAttribute="trailing" secondItem="ctB-ci-BlF" secondAttribute="trailing" constant="16" id="ItW-Ia-vKB"/>
                             <constraint firstItem="ieN-vS-fu6" firstAttribute="bottom" secondItem="ctB-ci-BlF" secondAttribute="bottom" constant="8" id="J1f-wQ-HkS"/>
                             <constraint firstItem="rh5-oz-pRb" firstAttribute="centerX" secondItem="9FD-Jj-d2Y" secondAttribute="centerX" id="KKF-ne-yVG"/>
                             <constraint firstItem="ctB-ci-BlF" firstAttribute="leading" secondItem="ieN-vS-fu6" secondAttribute="leading" constant="16" id="QRD-Ge-TBk"/>
                             <constraint firstItem="mOz-Yr-nbK" firstAttribute="top" secondItem="9FD-Jj-d2Y" secondAttribute="top" id="Toq-Vg-5KB"/>
+                            <constraint firstItem="ctB-ci-BlF" firstAttribute="centerX" secondItem="9FD-Jj-d2Y" secondAttribute="centerX" id="Z9B-rl-mUE"/>
                             <constraint firstItem="mOz-Yr-nbK" firstAttribute="trailing" secondItem="ieN-vS-fu6" secondAttribute="trailing" id="cuD-dW-95t"/>
                             <constraint firstItem="IXM-gW-PC5" firstAttribute="top" secondItem="mOz-Yr-nbK" secondAttribute="top" constant="64" id="fgY-rX-Qxl"/>
                             <constraint firstItem="mOz-Yr-nbK" firstAttribute="leading" secondItem="ieN-vS-fu6" secondAttribute="leading" id="fkN-Sb-47b"/>
                             <constraint firstItem="hbx-ON-LcY" firstAttribute="leading" secondItem="ieN-vS-fu6" secondAttribute="leading" constant="16" id="jp8-UL-bvo"/>
+                            <constraint firstItem="ieN-vS-fu6" firstAttribute="bottom" secondItem="ctB-ci-BlF" secondAttribute="bottom" constant="16" id="q96-l7-5mo"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="rh5-oz-pRb" id="95n-Ov-0gC"/>
                         <outlet property="characterDescription" destination="ctB-ci-BlF" id="7An-JM-lcK"/>
+                        <outlet property="loadingView" destination="eFK-ju-p7A" id="8Ao-Qm-eE4"/>
                         <outlet property="mapView" destination="mOz-Yr-nbK" id="0fT-5g-WnY"/>
                         <outlet property="name" destination="hbx-ON-LcY" id="ZLq-6X-yyK"/>
                         <outlet property="picture" destination="IXM-gW-PC5" id="Dls-eV-nNA"/>
@@ -89,6 +112,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

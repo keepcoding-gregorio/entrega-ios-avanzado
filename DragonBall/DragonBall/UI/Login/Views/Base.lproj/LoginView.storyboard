@@ -24,11 +24,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBm-jd-X8m" userLabel="Button">
-                                <rect key="frame" x="161.66666666666666" y="740.33333333333337" width="70" height="35.666666666666629"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Login">
+                                <rect key="frame" x="159" y="740.33333333333337" width="75" height="35.666666666666629"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Log In">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onLoginTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7td-fo-Fiu"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7js-CV-pLW" userLabel="Input View">
                                 <rect key="frame" x="32" y="382" width="329" height="88"/>
@@ -100,6 +103,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailError" destination="2lc-a4-YKq" id="XYQ-PN-hnI"/>
+                        <outlet property="emailField" destination="EBy-9G-p2V" id="pqJ-vE-3Q9"/>
+                        <outlet property="loadingView" destination="vmY-Yb-4RC" id="pAE-aj-91S"/>
+                        <outlet property="passwordError" destination="pcw-OT-g53" id="gJW-gC-ezY"/>
+                        <outlet property="passwordField" destination="JNO-KI-ebC" id="7a7-Nd-YEM"/>
                         <segue destination="nuq-QD-LiO" kind="show" identifier="LOGIN_TO_HOME" id="Lci-Dl-Kua"/>
                     </connections>
                 </viewController>

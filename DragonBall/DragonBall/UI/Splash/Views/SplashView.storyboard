@@ -38,8 +38,8 @@
                     </view>
                     <connections>
                         <outlet property="loading" destination="eOn-QN-KM9" id="ECR-Tr-7ex"/>
-                        <segue destination="aVH-UH-kD0" kind="show" id="SIa-mH-qtd"/>
-                        <segue destination="xvN-Fd-qB2" kind="show" id="fAM-Vf-rIC"/>
+                        <segue destination="aVH-UH-kD0" kind="show" identifier="SPLASH_TO_LOGIN" id="SIa-mH-qtd"/>
+                        <segue destination="xvN-Fd-qB2" kind="show" identifier="SPLASH_TO_HOME" id="fAM-Vf-rIC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -31,6 +31,25 @@
 		D631DB072AEEA93C00E6827D /* CharacterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB062AEEA93C00E6827D /* CharacterViewCell.swift */; };
 		D631DB0A2AEEB8E600E6827D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D631DB092AEEB8E600E6827D /* KeychainSwift */; };
 		D631DB0D2AEEBA2E00E6827D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D631DB0C2AEEBA2E00E6827D /* Kingfisher */; };
+		D631DB0F2AEEC19600E6827D /* KeychainDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB0E2AEEC19600E6827D /* KeychainDataProvider.swift */; };
+		D631DB112AEEC1FB00E6827D /* KeychainEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB102AEEC1FB00E6827D /* KeychainEnum.swift */; };
+		D631DB132AEEC29F00E6827D /* SecureDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB122AEEC29F00E6827D /* SecureDataProviderProtocol.swift */; };
+		D631DB152AEEC5B500E6827D /* DragonBallDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB142AEEC5B500E6827D /* DragonBallDataProviderProtocol.swift */; };
+		D631DB172AEEC5F600E6827D /* DragonBallEndpointsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB162AEEC5F600E6827D /* DragonBallEndpointsEnum.swift */; };
+		D631DB192AEEC62900E6827D /* DragonBallDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB182AEEC62900E6827D /* DragonBallDataProvider.swift */; };
+		D631DB1B2AEEC6C000E6827D /* CharacterDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB1A2AEEC6C000E6827D /* CharacterDAO.swift */; };
+		D631DB1F2AEEC70600E6827D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB1E2AEEC70600E6827D /* Character.swift */; };
+		D631DB212AEEC73D00E6827D /* CharacterLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB202AEEC73D00E6827D /* CharacterLocationModel.swift */; };
+		D631DB232AEEC7A600E6827D /* SplashViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB222AEEC7A600E6827D /* SplashViewControllerDelegate.swift */; };
+		D631DB252AEEC81F00E6827D /* LoginViewStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB242AEEC81F00E6827D /* LoginViewStateEnum.swift */; };
+		D631DB272AEEC84100E6827D /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB262AEEC84100E6827D /* LoginViewControllerDelegate.swift */; };
+		D631DB292AEEC8C900E6827D /* HomeViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB282AEEC8C900E6827D /* HomeViewControllerDelegate.swift */; };
+		D631DB2C2AEEC8FF00E6827D /* HomeViewStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB2B2AEEC8FF00E6827D /* HomeViewStateEnum.swift */; };
+		D631DB2E2AEECBD600E6827D /* SplashViewStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB2D2AEECBD600E6827D /* SplashViewStateEnum.swift */; };
+		D631DB302AEED0C800E6827D /* DetailViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB2F2AEED0C800E6827D /* DetailViewControllerDelegate.swift */; };
+		D631DB322AEED13900E6827D /* DetailViewStateEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB312AEED13900E6827D /* DetailViewStateEnum.swift */; };
+		D631DB342AEEDC8800E6827D /* CharacterMapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB332AEEDC8800E6827D /* CharacterMapPin.swift */; };
+		D631DB362AEF03B100E6827D /* LocationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D631DB352AEF03B100E6827D /* LocationDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +96,25 @@
 		D631DB002AEEA59400E6827D /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		D631DB042AEEA8F400E6827D /* CharacterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterViewCell.xib; sourceTree = "<group>"; };
 		D631DB062AEEA93C00E6827D /* CharacterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewCell.swift; sourceTree = "<group>"; };
+		D631DB0E2AEEC19600E6827D /* KeychainDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainDataProvider.swift; sourceTree = "<group>"; };
+		D631DB102AEEC1FB00E6827D /* KeychainEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainEnum.swift; sourceTree = "<group>"; };
+		D631DB122AEEC29F00E6827D /* SecureDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataProviderProtocol.swift; sourceTree = "<group>"; };
+		D631DB142AEEC5B500E6827D /* DragonBallDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallDataProviderProtocol.swift; sourceTree = "<group>"; };
+		D631DB162AEEC5F600E6827D /* DragonBallEndpointsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallEndpointsEnum.swift; sourceTree = "<group>"; };
+		D631DB182AEEC62900E6827D /* DragonBallDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallDataProvider.swift; sourceTree = "<group>"; };
+		D631DB1A2AEEC6C000E6827D /* CharacterDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDAO.swift; sourceTree = "<group>"; };
+		D631DB1E2AEEC70600E6827D /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		D631DB202AEEC73D00E6827D /* CharacterLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLocationModel.swift; sourceTree = "<group>"; };
+		D631DB222AEEC7A600E6827D /* SplashViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D631DB242AEEC81F00E6827D /* LoginViewStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewStateEnum.swift; sourceTree = "<group>"; };
+		D631DB262AEEC84100E6827D /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D631DB282AEEC8C900E6827D /* HomeViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D631DB2B2AEEC8FF00E6827D /* HomeViewStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewStateEnum.swift; sourceTree = "<group>"; };
+		D631DB2D2AEECBD600E6827D /* SplashViewStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewStateEnum.swift; sourceTree = "<group>"; };
+		D631DB2F2AEED0C800E6827D /* DetailViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D631DB312AEED13900E6827D /* DetailViewStateEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewStateEnum.swift; sourceTree = "<group>"; };
+		D631DB332AEEDC8800E6827D /* CharacterMapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMapPin.swift; sourceTree = "<group>"; };
+		D631DB352AEF03B100E6827D /* LocationDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +170,7 @@
 				D631DAE92AEE96ED00E6827D /* App */,
 				D631DACD2AEE942700E6827D /* Protocols */,
 				D631DACC2AEE942000E6827D /* Resources */,
-				D631DACB2AEE941A00E6827D /* Data */,
+				D631DACB2AEE941A00E6827D /* DataProviders */,
 				D631DACA2AEE940F00E6827D /* Domain */,
 				D631DAC92AEE940100E6827D /* UI */,
 				D631DAA72AEE92A800E6827D /* Info.plist */,
@@ -179,13 +217,13 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		D631DACB2AEE941A00E6827D /* Data */ = {
+		D631DACB2AEE941A00E6827D /* DataProviders */ = {
 			isa = PBXGroup;
 			children = (
-				D631DAD32AEE94C300E6827D /* Api */,
+				D631DAD32AEE94C300E6827D /* ExternalApi */,
 				D631DAD12AEE948E00E6827D /* Local */,
 			);
-			path = Data;
+			path = DataProviders;
 			sourceTree = "<group>";
 		};
 		D631DACC2AEE942000E6827D /* Resources */ = {
@@ -199,6 +237,8 @@
 		D631DACD2AEE942700E6827D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				D631DB122AEEC29F00E6827D /* SecureDataProviderProtocol.swift */,
+				D631DB142AEEC5B500E6827D /* DragonBallDataProviderProtocol.swift */,
 				D631DACE2AEE944400E6827D /* Delegates */,
 			);
 			path = Protocols;
@@ -207,6 +247,10 @@
 		D631DACE2AEE944400E6827D /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				D631DB222AEEC7A600E6827D /* SplashViewControllerDelegate.swift */,
+				D631DB262AEEC84100E6827D /* LoginViewControllerDelegate.swift */,
+				D631DB282AEEC8C900E6827D /* HomeViewControllerDelegate.swift */,
+				D631DB2F2AEED0C800E6827D /* DetailViewControllerDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -214,6 +258,8 @@
 		D631DACF2AEE945100E6827D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D631DB1E2AEEC70600E6827D /* Character.swift */,
+				D631DB202AEEC73D00E6827D /* CharacterLocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +267,9 @@
 		D631DAD02AEE946500E6827D /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				D631DB2A2AEEC8F100E6827D /* ViewStates */,
+				D631DB102AEEC1FB00E6827D /* KeychainEnum.swift */,
+				D631DB162AEEC5F600E6827D /* DragonBallEndpointsEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -229,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				D631DA9F2AEE92A700E6827D /* DragonBall.xcdatamodeld */,
+				D631DB0E2AEEC19600E6827D /* KeychainDataProvider.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -236,15 +286,18 @@
 		D631DAD22AEE94BA00E6827D /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				D631DB1A2AEEC6C000E6827D /* CharacterDAO.swift */,
+				D631DB352AEF03B100E6827D /* LocationDAO.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
 		};
-		D631DAD32AEE94C300E6827D /* Api */ = {
+		D631DAD32AEE94C300E6827D /* ExternalApi */ = {
 			isa = PBXGroup;
 			children = (
+				D631DB182AEEC62900E6827D /* DragonBallDataProvider.swift */,
 			);
-			path = Api;
+			path = ExternalApi;
 			sourceTree = "<group>";
 		};
 		D631DAD42AEE954B00E6827D /* Login */ = {
@@ -298,6 +351,7 @@
 		D631DAD92AEE95D300E6827D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D631DB332AEEDC8800E6827D /* CharacterMapPin.swift */,
 				D631DAF82AEEA49700E6827D /* DetailViewController.swift */,
 			);
 			path = Controllers;
@@ -408,6 +462,17 @@
 				D631DA982AEE92A700E6827D /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		D631DB2A2AEEC8F100E6827D /* ViewStates */ = {
+			isa = PBXGroup;
+			children = (
+				D631DB242AEEC81F00E6827D /* LoginViewStateEnum.swift */,
+				D631DB2B2AEEC8FF00E6827D /* HomeViewStateEnum.swift */,
+				D631DB2D2AEECBD600E6827D /* SplashViewStateEnum.swift */,
+				D631DB312AEED13900E6827D /* DetailViewStateEnum.swift */,
+			);
+			path = ViewStates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,17 +618,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D631DB112AEEC1FB00E6827D /* KeychainEnum.swift in Sources */,
+				D631DB1F2AEEC70600E6827D /* Character.swift in Sources */,
 				D631DAF12AEEA32400E6827D /* HomeViewController.swift in Sources */,
+				D631DB292AEEC8C900E6827D /* HomeViewControllerDelegate.swift in Sources */,
+				D631DB0F2AEEC19600E6827D /* KeychainDataProvider.swift in Sources */,
 				D631DAF32AEEA34000E6827D /* HomeViewModel.swift in Sources */,
+				D631DB1B2AEEC6C000E6827D /* CharacterDAO.swift in Sources */,
+				D631DB172AEEC5F600E6827D /* DragonBallEndpointsEnum.swift in Sources */,
+				D631DB302AEED0C800E6827D /* DetailViewControllerDelegate.swift in Sources */,
 				D631DA9B2AEE92A700E6827D /* LoginViewController.swift in Sources */,
 				D631DAA12AEE92A700E6827D /* DragonBall.xcdatamodeld in Sources */,
+				D631DB132AEEC29F00E6827D /* SecureDataProviderProtocol.swift in Sources */,
+				D631DB2E2AEECBD600E6827D /* SplashViewStateEnum.swift in Sources */,
+				D631DB192AEEC62900E6827D /* DragonBallDataProvider.swift in Sources */,
 				D631DB012AEEA59400E6827D /* SplashViewModel.swift in Sources */,
+				D631DB362AEF03B100E6827D /* LocationDAO.swift in Sources */,
 				D631DAFB2AEEA4E500E6827D /* DetailViewModel.swift in Sources */,
+				D631DB212AEEC73D00E6827D /* CharacterLocationModel.swift in Sources */,
+				D631DB232AEEC7A600E6827D /* SplashViewControllerDelegate.swift in Sources */,
 				D631DB072AEEA93C00E6827D /* CharacterViewCell.swift in Sources */,
 				D631DA972AEE92A700E6827D /* AppDelegate.swift in Sources */,
+				D631DB342AEEDC8800E6827D /* CharacterMapPin.swift in Sources */,
+				D631DB2C2AEEC8FF00E6827D /* HomeViewStateEnum.swift in Sources */,
 				D631DA992AEE92A700E6827D /* SceneDelegate.swift in Sources */,
+				D631DB152AEEC5B500E6827D /* DragonBallDataProviderProtocol.swift in Sources */,
 				D631DAF52AEEA43900E6827D /* LoginViewModel.swift in Sources */,
+				D631DB322AEED13900E6827D /* DetailViewStateEnum.swift in Sources */,
 				D631DAF92AEEA49700E6827D /* DetailViewController.swift in Sources */,
+				D631DB272AEEC84100E6827D /* LoginViewControllerDelegate.swift in Sources */,
+				D631DB252AEEC81F00E6827D /* LoginViewStateEnum.swift in Sources */,
 				D631DAFD2AEEA52400E6827D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -751,7 +835,6 @@
 				INFOPLIST_FILE = DragonBall/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -779,7 +862,6 @@
 				INFOPLIST_FILE = DragonBall/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
